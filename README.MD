@@ -1,3 +1,15 @@
+# 1. Склонируйте репозиторий
+git clone https://github.com && cd pulse
+
+# 2. Инициализируйте форк (замена портов и сложности)
+chmod +x init_maritime_fork.sh && ./init_maritime_fork.sh
+
+# 3. Соберите бинарник (Ultra-Light)
+chmod +x configure_pulse.sh && ./configure_pulse.sh
+make -j$(nproc)
+
+# 4. Запустите Флот
+./src/pulsed -daemon
 
 ⚓ Pulse: The Sovereign Maritime Messenger (SMM)
 
