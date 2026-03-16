@@ -11,6 +11,16 @@ make -j$(nproc)
 # 4. Запустите Флот
 ./src/pulsed -daemon
 
+Сборка для Андроид-Термукс
+# Один раз выполняем настройку:
+curl -O https://raw.githubusercontent.com
+chmod +x makepulse.sh
+mv makepulse.sh $PREFIX/bin/makepulse
+
+# Теперь в любой момент просто пишем:
+makepulse
+
+
 ⚓ Pulse: The Sovereign Maritime Messenger (SMM)
 
 "My Data is Cargo. My Device is a Vessel. The Bitcoin Pulse is my Compass."
